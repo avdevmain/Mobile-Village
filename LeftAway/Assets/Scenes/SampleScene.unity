@@ -24555,6 +24555,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0778d7b39a8e27d48aa860e568e88f9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cam: {fileID: 1807112873}
 --- !u!1001 &965482749
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -54240,8 +54241,8 @@ PrefabInstance:
       value: Peasant
       objectReference: {fileID: 0}
     - target: {fileID: 7646036459631443462, guid: ce16b8e733f421b45a94d4e3a582209e, type: 3}
-      propertyPath: m_Layer
-      value: 6
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7646036459631443463, guid: ce16b8e733f421b45a94d4e3a582209e, type: 3}
       propertyPath: m_RootOrder

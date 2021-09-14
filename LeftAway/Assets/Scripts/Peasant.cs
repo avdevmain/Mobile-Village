@@ -3,29 +3,40 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
+
 public class Peasant : MonoBehaviour
 {
     [SerializeField] private Vector3 desiredPosition;
 
-
     NavMeshAgent agent;
 
-    void Awake() {
+    void Awake() 
     {
         agent = GetComponent<NavMeshAgent>();
+        
     }
     
-    void OnMouseDown() {
-        Debug.Log("Ткнул на " + this.gameObject.name);
+    public void MakeHighlited(bool value)
+    {
+        if (value)
+        {
+            //Выделить цветом
+        }
+        else
+        {
+            //Убрать выделение
+        }
     }
+   
 
-    void SetDestination(Vector3 chosenPosition) {
+     void SetDestination(Vector3 chosenPosition) {
 
         desiredPosition = chosenPosition;
         
         if (Vector3.Distance(this.transform.position, desiredPosition) > 0.1f)
         {
             agent.destination = desiredPosition;
+            
         }
         else
         {
@@ -35,6 +46,4 @@ public class Peasant : MonoBehaviour
         
     }
 
-
-    }
 }
