@@ -2,28 +2,49 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using EPOOutline;
 
-
-public class Peasant : MonoBehaviour
+public class Peasant : Tappable
 {
     [SerializeField] private Vector3 desiredPosition;
 
     NavMeshAgent agent;
+    Outlinable outline;
 
+    Color blueColor = new Color32(0,235,255,255);
+
+    private ResourceContainer inventory;
+
+    public StateMachine stateMachine;
+
+    public IdleState idle;
+    
     void Awake() 
     {
         agent = GetComponent<NavMeshAgent>();
-        
+        outline = GetComponent<Outlinable>();
+    }
+
+    private void Start()
+    {
+        stateMachine = new StateMachine();
+        inventory = new ResourceContainer();
+
+        idle = new IdleState(this, stateMachine);
+
+        stateMachine.Initialize(idle);
     }
     
     public void MakeHighlited(bool value)
     {
         if (value)
         {
-            //Выделить цветом
+            outline.enabled = true;
+            outline.OutlineParameters.Color = blueColor;
         }
         else
         {
+            outline.enabled = false;
             //Убрать выделение
         }
     }

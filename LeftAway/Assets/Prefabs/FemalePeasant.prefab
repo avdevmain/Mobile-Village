@@ -1,0 +1,341 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8667189921484413588
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8667189921484413589}
+  - component: {fileID: 5807840682920133954}
+  - component: {fileID: 4232633238855893939}
+  - component: {fileID: 8706724397474937036}
+  - component: {fileID: 8667189921484413590}
+  m_Layer: 6
+  m_Name: FemalePeasant
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8667189921484413589
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8667189921484413588}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: -8, y: 0.55, z: -1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_Children:
+  - {fileID: 4612086165641296260}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!136 &5807840682920133954
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8667189921484413588}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.6
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &4232633238855893939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8667189921484413588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cc955b54f050bc4aa7dc8616cc66f85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  desiredPosition: {x: 0, y: 0, z: 0}
+--- !u!195 &8706724397474937036
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8667189921484413588}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!114 &8667189921484413590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8667189921484413588}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fe91dc294731a9428c0941ea7579110, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  complexMaskingMode: 0
+  drawingMode: 1
+  outlineLayer: 0
+  outlineTargets:
+  - edgeDilateAmount: 5
+    frontEdgeDilateAmount: 5
+    backEdgeDilateAmount: 5
+    renderer: {fileID: 0}
+    rendererType: 2
+    SubmeshIndex: 0
+    BoundsMode: 0
+    Bounds:
+      m_Center: {x: 0, y: 0, z: 0}
+      m_Extent: {x: 0.5, y: 0.5, z: 0.5}
+    CutoutDescriptionType: 0
+    CutoutThreshold: 0.5
+    CullMode: 2
+    cutoutTextureName: 
+    DilateRenderingMode: 0
+    cutoutTextureIndex: 0
+  renderStyle: 1
+  outlineParameters:
+    enabled: 1
+    color: {r: 0, g: 0.93035746, b: 1, a: 1}
+    dilateShift: 1
+    blurShift: 1
+    fillPass:
+      shader: {fileID: 4800000, guid: 4b218962224bcd449ba16572d6a50cee, type: 3}
+      serializedProperties:
+      - PropertyName: _PublicColor
+        Property:
+          ColorValue: {r: 0.074186325, g: 1, b: 0, a: 0.2}
+          FloatValue: 0
+          VectorValue: {x: 0, y: 0, z: 0, w: 0}
+          PropertyType: 0
+      - PropertyName: _PublicHorizontalSize
+        Property:
+          ColorValue: {r: 1, g: 0, b: 0, a: 0.2}
+          FloatValue: 1
+          VectorValue: {x: 0, y: 0, z: 0, w: 0}
+          PropertyType: 2
+      - PropertyName: _PublicVerticalSize
+        Property:
+          ColorValue: {r: 1, g: 0, b: 0, a: 0.2}
+          FloatValue: 1
+          VectorValue: {x: 0, y: 0, z: 0, w: 0}
+          PropertyType: 2
+      - PropertyName: _PublicHorizontalGapSize
+        Property:
+          ColorValue: {r: 1, g: 0, b: 0, a: 0.2}
+          FloatValue: 0.5
+          VectorValue: {x: 0, y: 0, z: 0, w: 0}
+          PropertyType: 3
+      - PropertyName: _PublicVerticalGapSize
+        Property:
+          ColorValue: {r: 1, g: 0, b: 0, a: 0.2}
+          FloatValue: 0.5
+          VectorValue: {x: 0, y: 0, z: 0, w: 0}
+          PropertyType: 3
+      - PropertyName: _PublicHorizontalSoftness
+        Property:
+          ColorValue: {r: 1, g: 0, b: 0, a: 0.2}
+          FloatValue: 0.2
+          VectorValue: {x: 0, y: 0, z: 0, w: 0}
+          PropertyType: 3
+      - PropertyName: _PublicVerticalSoftness
+        Property:
+          ColorValue: {r: 1, g: 0, b: 0, a: 0.2}
+          FloatValue: 0.2
+          VectorValue: {x: 0, y: 0, z: 0, w: 0}
+          PropertyType: 3
+      - PropertyName: _PublicHorizontalSpeed
+        Property:
+          ColorValue: {r: 1, g: 0, b: 0, a: 0.2}
+          FloatValue: 1
+          VectorValue: {x: 0, y: 0, z: 0, w: 0}
+          PropertyType: 2
+      - PropertyName: _PublicVerticalSpeed
+        Property:
+          ColorValue: {r: 1, g: 0, b: 0, a: 0.2}
+          FloatValue: 1
+          VectorValue: {x: 0, y: 0, z: 0, w: 0}
+          PropertyType: 2
+      - PropertyName: _PublicAngle
+        Property:
+          ColorValue: {r: 1, g: 0, b: 0, a: 0.2}
+          FloatValue: 45
+          VectorValue: {x: 0, y: 0, z: 0, w: 0}
+          PropertyType: 3
+      - PropertyName: _PublicSecondaryAlpha
+        Property:
+          ColorValue: {r: 1, g: 0, b: 0, a: 0.2}
+          FloatValue: 0.2
+          VectorValue: {x: 0, y: 0, z: 0, w: 0}
+          PropertyType: 3
+      - PropertyName: _PublicOuterColor
+        Property:
+          ColorValue: {r: 1, g: 0, b: 0, a: 1}
+          FloatValue: 0.2
+          VectorValue: {x: 0, y: 0, z: 0, w: 0}
+          PropertyType: 0
+      - PropertyName: _PublicInnerColor
+        Property:
+          ColorValue: {r: 0, g: 1, b: 0, a: 1}
+          FloatValue: 0.2
+          VectorValue: {x: 0, y: 0, z: 0, w: 0}
+          PropertyType: 0
+      - PropertyName: _PublicFresnelPower
+        Property:
+          ColorValue: {r: 0, g: 1, b: 0, a: 1}
+          FloatValue: 2
+          VectorValue: {x: 0, y: 0, z: 0, w: 0}
+          PropertyType: 2
+      - PropertyName: _PublicFresnelMultiplier
+        Property:
+          ColorValue: {r: 0, g: 1, b: 0, a: 1}
+          FloatValue: 1
+          VectorValue: {x: 0, y: 0, z: 0, w: 0}
+          PropertyType: 2
+      - PropertyName: _PublicGapColor
+        Property:
+          ColorValue: {r: 0, g: 0.18643188, b: 1, a: 0.2}
+          FloatValue: 1
+          VectorValue: {x: 0, y: 0, z: 0, w: 0}
+          PropertyType: 0
+      - PropertyName: _PublicSize
+        Property:
+          ColorValue: {r: 1, g: 0, b: 0, a: 0.2}
+          FloatValue: 1
+          VectorValue: {x: 0, y: 0, z: 0, w: 0}
+          PropertyType: 2
+      - PropertyName: _PublicGapSize
+        Property:
+          ColorValue: {r: 1, g: 0, b: 0, a: 0.2}
+          FloatValue: -0.57
+          VectorValue: {x: 0, y: 0, z: 0, w: 0}
+          PropertyType: 3
+      - PropertyName: _PublicSoftness
+        Property:
+          ColorValue: {r: 1, g: 0, b: 0, a: 0.2}
+          FloatValue: 1.2
+          VectorValue: {x: 0, y: 0, z: 0, w: 0}
+          PropertyType: 3
+      - PropertyName: _PublicSpeed
+        Property:
+          ColorValue: {r: 1, g: 0, b: 0, a: 0.2}
+          FloatValue: 1
+          VectorValue: {x: 0, y: 0, z: 0, w: 0}
+          PropertyType: 2
+  backParameters:
+    enabled: 1
+    color: {r: 1, g: 0, b: 0.08064842, a: 1}
+    dilateShift: 1
+    blurShift: 1
+    fillPass:
+      shader: {fileID: 0}
+      serializedProperties: []
+  frontParameters:
+    enabled: 1
+    color: {r: 0.21130466, g: 1, b: 0, a: 1}
+    dilateShift: 1
+    blurShift: 1
+    fillPass:
+      shader: {fileID: 0}
+      serializedProperties: []
+--- !u!1001 &4616530340167864490
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 8667189921484413589}
+    m_Modifications:
+    - target: {fileID: 1753821932752560, guid: a2abb1da5d5302a48affd7243f53e8ad, type: 3}
+      propertyPath: m_Name
+      value: Chr_Fantasy_FemalePeasant_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 4607005328025902, guid: a2abb1da5d5302a48affd7243f53e8ad, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4607005328025902, guid: a2abb1da5d5302a48affd7243f53e8ad, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4607005328025902, guid: a2abb1da5d5302a48affd7243f53e8ad, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4607005328025902, guid: a2abb1da5d5302a48affd7243f53e8ad, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4607005328025902, guid: a2abb1da5d5302a48affd7243f53e8ad, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4607005328025902, guid: a2abb1da5d5302a48affd7243f53e8ad, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4607005328025902, guid: a2abb1da5d5302a48affd7243f53e8ad, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4607005328025902, guid: a2abb1da5d5302a48affd7243f53e8ad, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4607005328025902, guid: a2abb1da5d5302a48affd7243f53e8ad, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4607005328025902, guid: a2abb1da5d5302a48affd7243f53e8ad, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4607005328025902, guid: a2abb1da5d5302a48affd7243f53e8ad, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4607005328025902, guid: a2abb1da5d5302a48affd7243f53e8ad, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4607005328025902, guid: a2abb1da5d5302a48affd7243f53e8ad, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4607005328025902, guid: a2abb1da5d5302a48affd7243f53e8ad, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 95908356934876168, guid: a2abb1da5d5302a48affd7243f53e8ad, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: a1731e645fb487b47ac3a90337a39ba2, type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a2abb1da5d5302a48affd7243f53e8ad, type: 3}
+--- !u!4 &4612086165641296260 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4607005328025902, guid: a2abb1da5d5302a48affd7243f53e8ad, type: 3}
+  m_PrefabInstance: {fileID: 4616530340167864490}
+  m_PrefabAsset: {fileID: 0}
