@@ -18,6 +18,7 @@ public class Peasant : Tappable
     public StateMachine stateMachine;
 
     public IdleState idle;
+
     
     void Awake() 
     {
@@ -66,5 +67,16 @@ public class Peasant : Tappable
         
         
     }
+
+    public override void Tap()
+    {
+        MakeHighlited(true);
+    }
+
+    public override void ClearTap()
+    {
+        MakeHighlited(false);
+    }
+
 
 }

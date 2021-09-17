@@ -4,15 +4,25 @@ using UnityEngine;
 
 public class WorldResources : Tappable
 {
-    // Start is called before the first frame update
-    void Start()
+    
+    [SerializeField] private int amount;
+
+    public ResourceType type;
+
+    [SerializeField] private Building townhall;
+
+    public override void Tap()
+    {
+        base.Tap();
+
+        townhall.inventory.AddItem(new Resource(type, amount));
+ 
+    }
+
+    public override void ClearTap()
     {
         
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
 }

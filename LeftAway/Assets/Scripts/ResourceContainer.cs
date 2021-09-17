@@ -7,6 +7,9 @@ public class ResourceContainer
 {
     private List<Resource> items;
 
+    //public int maxStacks;
+
+
     public ResourceContainer()
     {
         items = new List<Resource>();
@@ -24,6 +27,11 @@ public class ResourceContainer
         else {//Ресурс не найден в инвентаре
             items.Add(itemToAdd);
         }
+    }
+
+    public int GetLength()  
+    {
+        return items.Count();
     }
     
     

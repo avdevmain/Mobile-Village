@@ -11,10 +11,34 @@ public class Resource
 
     private int amount;
 
+    private int stackSize;
+
     public Resource(ResourceType type, int amount)
     {
         this.type = type;
         this.amount = amount;
+
+        switch (type)
+        {
+            case ResourceType.timber:
+            case ResourceType.wood:
+            case ResourceType.stone:
+                stackSize = 16;
+            break;
+            case ResourceType.wood_hammer:
+            case ResourceType.wood_axe:
+                stackSize = 1;
+            break;
+
+            default:
+            stackSize = 0;
+            break;
+        }
+
+        if (amount > stackSize)
+        {
+            Debug.LogError("Amount of resource exceeds stack size limit!");
+        }
     }
 
     public ResourceType GetResourceType()
