@@ -46,6 +46,10 @@ public class Resource
         return type;
     }
 
+    public int GetStackSize()
+    {
+        return stackSize;
+    }
 
     public void ChangeAmount(int value)
     {

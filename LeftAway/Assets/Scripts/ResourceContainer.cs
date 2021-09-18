@@ -34,6 +34,13 @@ public class ResourceContainer
         return items.Count();
     }
     
+    public Resource GetItem(int index)
+    {
+        if ((index<items.Count)&&(items[index]!=null))
+            return items[index];
+        else
+            return null;
+    }
     
     public void RemoveItem(Resource itemToRmv)
     {

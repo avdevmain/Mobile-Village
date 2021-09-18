@@ -26,8 +26,7 @@ public class Building : Tappable
 
         ui_Manager.SetTitle(this.name + " lvl." + level);
         ui_Manager.SetStatus(status);
-        ui_Manager.SetupInventory(this);
-        ui_Manager.OpenMenu();
+        ui_Manager.OpenMenu(this);
     }
 
     public override void ClearTap()

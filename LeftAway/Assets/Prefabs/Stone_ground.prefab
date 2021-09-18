@@ -108,7 +108,7 @@ GameObject:
   - component: {fileID: 1079043119042388907}
   - component: {fileID: 1079043119042388917}
   - component: {fileID: 1079043119042388916}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Stone_ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
