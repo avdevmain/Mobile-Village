@@ -1,4 +1,7 @@
-# [In progress] Left away (09.2021)
+# [Frozen] Left away (09.2021)
+
+//Not enough FUN; tiny target audience.
+
 Hypercasual survival game, where world is made out of cubes
 
 Inspired by "Dwarf Fortress", "Rimworld" and modification for "Minecraft" called "Minecolonies".
