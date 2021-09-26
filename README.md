@@ -24,3 +24,6 @@ https://assetstore.unity.com/packages/3d/characters/humanoids/fantasy/polygon-mi
 (Misc):
 
 Outline: https://assetstore.unity.com/packages/vfx/shaders/fullscreen-camera-effects/easy-performant-outline-2d-3d-urp-hdrp-and-built-in-renderer-157187
+
+
+<img src="https://github.com/avdevmain/LeftAway/blob/main/leftAwayLastState.png"  title="Latest screenshot">
