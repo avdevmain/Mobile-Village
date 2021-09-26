@@ -18,7 +18,8 @@ public class Building : Tappable
     [SerializeField] private UI_Manager ui_Manager;
     public ResourceContainer inventory;
 
-    public int slotsAmount;
+   
+    public int startInvSlots = 2;
 
      public override void Tap()
     {
@@ -35,7 +36,7 @@ public class Building : Tappable
     }
 
     private void Start() {
-        inventory = new ResourceContainer();
+        inventory = new ResourceContainer(startInvSlots);
     }
 
     public Status GetStatus()

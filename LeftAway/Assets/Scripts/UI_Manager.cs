@@ -46,7 +46,7 @@ public class UI_Manager : MonoBehaviour
 
    public void SetupInventory(Building building)
    {
-       for (int i = 0; i< building.slotsAmount; i++)
+       for (int i = 0; i< building.inventory.slotsAmount; i++)
        {
            //Create inventory slot, fill it with item icon and write resource amount
             GameObject newSlot = Instantiate(inv_slot_prefab, inv_grid);

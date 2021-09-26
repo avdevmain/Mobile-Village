@@ -4964,6 +4964,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4959206988071946, guid: c980d1f27dc965a44af9a3652477671c, type: 3}
   m_PrefabInstance: {fileID: 206528856}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &207992680 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6782957534723753264, guid: ddfd1bd89d1342f41afa302a27960d89, type: 3}
+  m_PrefabInstance: {fileID: 6782957534596928017}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &211280009
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21086,9 +21091,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c82093140b281104dad63bee54977a87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  respawnTime: 0
   amount: 0
   type: 0
   townhall: {fileID: 0}
+  collider: {fileID: 0}
+  model: {fileID: 0}
 --- !u!1001 &813685727
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32850,6 +32858,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4002637461476670, guid: c27a3a01668fea640b28323333f6edac, type: 3}
   m_PrefabInstance: {fileID: 1453377543}
   m_PrefabAsset: {fileID: 0}
+--- !u!136 &1243379871 stripped
+CapsuleCollider:
+  m_CorrespondingSourceObject: {fileID: 6782957534988157795, guid: ddfd1bd89d1342f41afa302a27960d89, type: 3}
+  m_PrefabInstance: {fileID: 6782957534596928017}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1246153436
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -41768,6 +41781,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4489404336695620, guid: 98dd8e405a3f26848b63e1b78dfb7c5b, type: 3}
   m_PrefabInstance: {fileID: 1581171412}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1582461446 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1079043118894784108, guid: 94eaa27720b800c4f888c313a8016d44, type: 3}
+  m_PrefabInstance: {fileID: 1079043117506758308}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1584276084
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -42079,6 +42097,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 4489404336695620, guid: 98dd8e405a3f26848b63e1b78dfb7c5b, type: 3}
   m_PrefabInstance: {fileID: 1592610941}
+  m_PrefabAsset: {fileID: 0}
+--- !u!135 &1599268244 stripped
+SphereCollider:
+  m_CorrespondingSourceObject: {fileID: 1079043119042388917, guid: 94eaa27720b800c4f888c313a8016d44, type: 3}
+  m_PrefabInstance: {fileID: 1079043117506758308}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1600218917
 PrefabInstance:
@@ -51765,7 +51788,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ui_Manager: {fileID: 1726833720}
-  slotsAmount: 2
+  startInvSlots: 2
 --- !u!1001 &1962852366
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -55573,9 +55596,21 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1079043119042388916, guid: 94eaa27720b800c4f888c313a8016d44, type: 3}
+      propertyPath: model
+      value: 
+      objectReference: {fileID: 1582461446}
+    - target: {fileID: 1079043119042388916, guid: 94eaa27720b800c4f888c313a8016d44, type: 3}
+      propertyPath: collider
+      value: 
+      objectReference: {fileID: 1599268244}
+    - target: {fileID: 1079043119042388916, guid: 94eaa27720b800c4f888c313a8016d44, type: 3}
       propertyPath: townhall
       value: 
       objectReference: {fileID: 1961147696}
+    - target: {fileID: 1079043119042388916, guid: 94eaa27720b800c4f888c313a8016d44, type: 3}
+      propertyPath: respawnTime
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 94eaa27720b800c4f888c313a8016d44, type: 3}
 --- !u!1001 &4610386616677760741
@@ -55737,9 +55772,21 @@ PrefabInstance:
     m_TransformParent: {fileID: 562944301}
     m_Modifications:
     - target: {fileID: 6782957534988157792, guid: ddfd1bd89d1342f41afa302a27960d89, type: 3}
+      propertyPath: model
+      value: 
+      objectReference: {fileID: 207992680}
+    - target: {fileID: 6782957534988157792, guid: ddfd1bd89d1342f41afa302a27960d89, type: 3}
+      propertyPath: collider
+      value: 
+      objectReference: {fileID: 1243379871}
+    - target: {fileID: 6782957534988157792, guid: ddfd1bd89d1342f41afa302a27960d89, type: 3}
       propertyPath: townhall
       value: 
       objectReference: {fileID: 1961147696}
+    - target: {fileID: 6782957534988157792, guid: ddfd1bd89d1342f41afa302a27960d89, type: 3}
+      propertyPath: respawnTime
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6782957534988157793, guid: ddfd1bd89d1342f41afa302a27960d89, type: 3}
       propertyPath: m_RootOrder
       value: 0

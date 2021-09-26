@@ -7,27 +7,45 @@ public class ResourceContainer
 {
     private List<Resource> items;
 
-    //public int maxStacks;
+    public int slotsAmount;
 
 
-    public ResourceContainer()
+    public ResourceContainer(int slots)
     {
         items = new List<Resource>();
+        slotsAmount = slots;
     }
 
     public void AddItem(Resource itemToAdd)
     {
 
         ResourceType typeToFind = itemToAdd.GetResourceType();
-        Resource foundResource = items.FirstOrDefault(i => i.GetResourceType()==typeToFind);
+        int stackSize = itemToAdd.GetStackSize();
+        int add_amount = itemToAdd.GetAmount();
+        Resource foundResource = items.FirstOrDefault(i => ((i.GetResourceType()==typeToFind) && (i.GetAmount()!=stackSize)));
         if (foundResource!=null) { //Ресурс найден в инвентаре
-            foundResource.ChangeAmount(itemToAdd.GetAmount());
+
+            int cur_amount = foundResource.GetAmount();
+            if (cur_amount+add_amount <= stackSize)
+                foundResource.ChangeAmount(add_amount);
+            else
+            {
+                int difference = stackSize - cur_amount;
+                foundResource.ChangeAmount(difference);
+
+                if (GetLength()<slotsAmount)
+                    items.Add(new Resource(typeToFind,add_amount-difference));
+
+            }
             
         }
         else {//Ресурс не найден в инвентаре
-            items.Add(itemToAdd);
+            if (GetLength()<slotsAmount)
+                items.Add(itemToAdd);
+      
         }
     }
+
 
     public int GetLength()  
     {

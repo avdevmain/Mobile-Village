@@ -19,6 +19,8 @@ public class Peasant : Tappable
 
     public IdleState idle;
 
+
+    private int peasantInvSlots = 3;
     
     void Awake() 
     {
@@ -29,7 +31,7 @@ public class Peasant : Tappable
     private void Start()
     {
         stateMachine = new StateMachine();
-        inventory = new ResourceContainer();
+        inventory = new ResourceContainer(peasantInvSlots);
 
         idle = new IdleState(this, stateMachine);
 
